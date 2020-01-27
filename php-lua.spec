@@ -4,7 +4,7 @@
 #
 Name     : php-lua
 Version  : 2.0.6
-Release  : 2
+Release  : 3
 URL      : https://pecl.php.net//get/lua-2.0.6.tgz
 Source0  : https://pecl.php.net//get/lua-2.0.6.tgz
 Summary  : No detailed summary available
@@ -27,6 +27,7 @@ lib components for the php-lua package.
 
 %prep
 %setup -q -n lua-2.0.6
+cd %{_builddir}/lua-2.0.6
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -45,4 +46,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20180731/lua.so
+/usr/lib64/extensions/no-debug-non-zts-20190902/lua.so

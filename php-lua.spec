@@ -4,7 +4,7 @@
 #
 Name     : php-lua
 Version  : 2.0.6
-Release  : 1
+Release  : 2
 URL      : https://pecl.php.net//get/lua-2.0.6.tgz
 Source0  : https://pecl.php.net//get/lua-2.0.6.tgz
 Summary  : No detailed summary available

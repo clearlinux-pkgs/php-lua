@@ -4,10 +4,10 @@
 #
 Name     : php-lua
 Version  : 2.0.7
-Release  : 7
+Release  : 8
 URL      : https://pecl.php.net/get/lua-2.0.7.tgz
 Source0  : https://pecl.php.net/get/lua-2.0.7.tgz
-Summary  : PHP PECL extension for an embedded Lua interpreter
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : PHP-3.01
 Requires: php-lua-lib = %{version}-%{release}

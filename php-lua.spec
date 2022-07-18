@@ -4,7 +4,7 @@
 #
 Name     : php-lua
 Version  : 2.0.7
-Release  : 13
+Release  : 14
 URL      : https://pecl.php.net/get/lua-2.0.7.tgz
 Source0  : https://pecl.php.net/get/lua-2.0.7.tgz
 Summary  : No detailed summary available
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : PHP-3.01
 BuildRequires : buildreq-php
 BuildRequires : lua-dev
+Patch1: PHP-8.patch
 
 %description
 No detailed description available
@@ -19,6 +20,7 @@ No detailed description available
 %prep
 %setup -q -n lua-2.0.7
 cd %{_builddir}/lua-2.0.7
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -34,3 +36,4 @@ make  %{?_smp_mflags}
 
 %files
 %defattr(-,root,root,-)
+/usr/lib64/extensions/no-debug-non-zts-20210902/lua.so
